@@ -42,7 +42,7 @@ const CounterElement = ({
           element.item === title
             ? {
                 ...element,
-                pieces: element.pieces > 0 ? element.pieces - 1 : 0,
+                pieces: element.pieces > 1 ? element.pieces - 1 : 0,
               }
             : { ...element }
         );

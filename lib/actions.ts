@@ -57,7 +57,7 @@ export async function decrease(name: string) {
         cart: [...(user?.cart || [])].map((obj) =>
           obj.title === name
             ? obj
-            : { ...obj, pieces: obj.pieces! > 0 ? obj.pieces! - 1 : obj.pieces }
+            : { ...obj, pieces: obj.pieces! > 1 ? obj.pieces! - 1 : obj.pieces }
         ),
       })
       .commit();
