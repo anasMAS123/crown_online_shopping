@@ -67,6 +67,7 @@ const Page = () => {
 
   useEffect(() => {
     if (!Array.isArray(cartItems) || cartItems.length === 0) {
+      setCart([]);
       setLoading(false);
       return;
     }
