@@ -75,7 +75,6 @@ const Page = () => {
       const data = await getProductsByName([
         ...cartItems?.map((item) => item.item),
       ]);
-      if (!(data.length > 0)) return;
       setCart(data);
       setLoading(false);
     }
